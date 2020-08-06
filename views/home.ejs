@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <button id="createRoom">Create room</button>
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+      const createRoomButton = document.getElementById("createRoom");
+      console.log(createRoomButton);
+
+      createRoomButton.addEventListener("click", function () {
+        location.href = ROOM_ID;
+      });
+    </script>
+  </body>
+</html>
